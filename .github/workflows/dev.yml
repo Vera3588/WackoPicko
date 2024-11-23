@@ -9,5 +9,13 @@ jobs:
          - uses: docker://docker.io/fluidattacks/cli:latest
            name: machineStandalone2
            with:
-             args: skims --strict --output report.csv scan ./config/config.yaml
+             args: skims scan ./config/config.yaml
+         - name: resultados
+           uses: actions/upload-artifact@v4
+           if: always()
+           with:
+             name: resultados
+             path: ./config/Fluid-Attacks-Results.csv
+            
+      
             
