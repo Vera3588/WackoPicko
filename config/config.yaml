@@ -16,6 +16,3 @@ sca:
     - .
   exclude:
     - glob(**/test/**)
-output:
-  file_path: test.csv
-  format: CSV
