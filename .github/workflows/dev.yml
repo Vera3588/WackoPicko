@@ -15,7 +15,7 @@ jobs:
            if: always()
            with:
              name: resultados
-             path: ./config/Fluid-Attacks-Results.csv
+             path: Fluid-Attacks-Results.csv
             
       
             
